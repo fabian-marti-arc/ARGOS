@@ -29,4 +29,56 @@ void ex_0013_SecondOrderEquation(void)
   const char *any_real_solution_message = "Any real is solution of this equation.\n";
 
   // TODO: read coefficients a, b and c, then print the real solutions of the equation
+  int a, b, c;
+  double x, x2;
+
+  printf(usage_message);
+  while (true)
+  {
+    printf(input_message);
+    bool passed = scanf("%d %d %d", &a, &b, &c);
+
+    if (passed)
+      break;
+
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF)
+    {
+    }
+  }
+
+  if (a == 0 && b == 0 && c == 0)
+  {
+    printf(any_real_solution_message);
+  }
+  else if (a == 0 && b == 0)
+  {
+    printf(no_real_solution_message);
+  }
+  else if (a == 0)
+  {
+    x = (-c) / b;
+    printf("x = %.4f\n", x);
+  }
+  else
+  {
+    double d = b * b - 4.0 * a * c;
+    if (d < 0)
+    {
+      printf(no_real_solution_message);
+    }
+    else if (d == 0)
+    {
+      x = (-b) / (2 * a);
+      printf("x = %.4f\n", x);
+    }
+    else
+    {
+      x = (-b + sqrt(d)) / (2 * a);
+      x2 = (-b - sqrt(d)) / (2 * a);
+
+      printf("x1 = %.4f\n", x);
+      printf("x2 = %.4f\n", x2);
+    }
+  }
 }

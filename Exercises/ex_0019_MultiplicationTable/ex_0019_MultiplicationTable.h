@@ -8,5 +8,6 @@
 // Local includes
 
 // Function prototypes
-
+int ex_0019_Read(int, int);
+void ex_0019_MultiplicationTable(int);
 #endif // EX_0019_MULTIPLICATIONTABLE_H

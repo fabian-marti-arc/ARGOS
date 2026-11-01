@@ -9,5 +9,5 @@
 // Function definitions
 void ex_0002_PrintMathCalc(void)
 {
-  // TODO: compute and print the result of the calculation
+  printf("The result of 37 * 12 = %d\n", 37 * 12);
 }

@@ -10,4 +10,10 @@
 void ex_0007_Printf(void)
 {
   // TODO: print the expected output with printf (mind the escape sequences)
+  printf("Initials: __\n");
+  printf("Code: __\n");
+  printf("\n\n");
+  printf("Birthdate: __/__/__\n");
+  printf("Number: __\\__\n");
+  printf("Text: \"____\"\n");
 }
