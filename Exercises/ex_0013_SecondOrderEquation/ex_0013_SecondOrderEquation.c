@@ -29,21 +29,22 @@ void ex_0013_SecondOrderEquation(void)
   const char *any_real_solution_message = "Any real is solution of this equation.\n";
 
   // TODO: read coefficients a, b and c, then print the real solutions of the equation
-  int a, b, c;
+  int scanned = 0;
+  double a, b, c;
   double x, x2;
 
-  printf(usage_message);
-  while (true)
+  while (scanned != 3 && scanned != EOF)
   {
+    printf(usage_message);
     printf(input_message);
-    bool passed = scanf("%d %d %d", &a, &b, &c);
+    scanned = scanf(" %lf %lf %lf", &a, &b, &c);
 
-    if (passed)
-      break;
-
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF)
     {
+      int c;
+      do
+      {
+        c = getchar();
+      } while (c != '\n' && c != EOF);
     }
   }
 
@@ -53,12 +54,13 @@ void ex_0013_SecondOrderEquation(void)
   }
   else if (a == 0 && b == 0)
   {
-    printf(no_real_solution_message);
+    printf(no_solution_message);
   }
   else if (a == 0)
   {
     x = (-c) / b;
-    printf("x = %.4f\n", x);
+    printf(linear_solution_message);
+    printf("x = %.4lf\n", x);
   }
   else
   {
@@ -69,16 +71,25 @@ void ex_0013_SecondOrderEquation(void)
     }
     else if (d == 0)
     {
+      printf(double_real_solution_message);
       x = (-b) / (2 * a);
-      printf("x = %.4f\n", x);
+      printf("x = %.4lf\n", x);
     }
     else
     {
       x = (-b + sqrt(d)) / (2 * a);
       x2 = (-b - sqrt(d)) / (2 * a);
 
-      printf("x1 = %.4f\n", x);
-      printf("x2 = %.4f\n", x2);
+      if (x == x2)
+      {
+        printf(double_real_solution_message);
+        printf("x = %.4lf\n", x);
+      }
+
+      printf(two_real_solutions_message);
+
+      printf("x1 = %.4lf\n", x);
+      printf("x2 = %.4lf\n", x2);
     }
   }
 }

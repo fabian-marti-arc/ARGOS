@@ -11,7 +11,7 @@ double ex_0005_CelsiusToFahrenheit(double temperatureC)
   double temperatureF = 0.;
 
   // TODO: convert temperatureC to Fahrenheit and return it
-  temperatureF = 32 + 1.8f * temperatureC;
+  temperatureF = 32 + 1.8 * temperatureC;
 
   return temperatureF;
 }
