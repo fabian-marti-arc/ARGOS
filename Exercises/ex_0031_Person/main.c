@@ -8,5 +8,7 @@
 int main(void)
 {
 
+  ex_0031_Person();
+
   return 0;
 }

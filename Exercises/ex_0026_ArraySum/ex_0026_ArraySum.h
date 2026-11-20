@@ -8,5 +8,6 @@
 // Local includes
 
 // Function prototypes
+void ex_0026_ArraySum();
 
 #endif // EX_0026_ARRAYSUM_H

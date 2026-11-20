@@ -7,6 +7,7 @@
 
 int main(void)
 {
+  ex_0026_ArraySum();
 
   return 0;
 }

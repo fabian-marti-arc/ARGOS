@@ -8,7 +8,17 @@
 // Local includes
 
 // Types
+typedef struct
+{
+    double real;
+    double imaginary;
+} Complex;
 
 // Function prototypes
+Complex ex_0030_InputComplex(void);
+Complex ex_0030_SumComplex(Complex, Complex);
+Complex ex_0030_DiffComplex(Complex, Complex);
+void ex_0030_PrintComplex(Complex);
+void ex_0030_Complex(void);
 
 #endif // EX_0030_COMPLEX_H
