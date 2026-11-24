@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+int ex_0189_PointerCompare(const int *, const int *, int);
 #endif // EX_0189_POINTERCOMPARE_H

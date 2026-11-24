@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+void ex_0115_ClampInplace(int *, int, int);
 #endif // EX_0115_CLAMPINPLACE_H

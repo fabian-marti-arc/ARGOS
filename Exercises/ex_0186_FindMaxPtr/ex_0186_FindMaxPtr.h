@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+int *ex_0186_FindMaxPtr(int *, int);
 #endif // EX_0186_FINDMAXPTR_H

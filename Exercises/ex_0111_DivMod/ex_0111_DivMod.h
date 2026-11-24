@@ -8,5 +8,6 @@
 // Local includes
 
 // Function prototypes
+void ex_0111_DivMod(int, int, int *, int *);
 
 #endif // EX_0111_DIVMOD_H

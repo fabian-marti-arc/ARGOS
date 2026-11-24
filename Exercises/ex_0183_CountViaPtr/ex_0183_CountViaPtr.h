@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+void ex_0183_CountViaPtr(const int *, int, int, int *);
 #endif // EX_0183_COUNTVIAPTR_H

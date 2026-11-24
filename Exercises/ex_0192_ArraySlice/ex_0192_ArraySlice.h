@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+int ex_0192_ArraySlice(const int *, int, int, int, int *);
 #endif // EX_0192_ARRAYSLICE_H

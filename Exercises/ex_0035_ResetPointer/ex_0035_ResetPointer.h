@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+void ex_0035_ResetPointer(int **);
 #endif // EX_0035_RESETPOINTER_H

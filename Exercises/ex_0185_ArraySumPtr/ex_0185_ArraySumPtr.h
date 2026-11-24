@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+int ex_0185_ArraySumPtr(const int *, int);
 #endif // EX_0185_ARRAYSUMPTR_H

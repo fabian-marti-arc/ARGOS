@@ -7,3 +7,15 @@
 
 // Function definitions
 // TODO: implement ex_0115_ClampInplace
+void ex_0115_ClampInplace(int *value, int min, int max)
+{
+    if (*value < min)
+    {
+        *value = min;
+    }
+
+    if (*value > max)
+    {
+        *value = max;
+    }
+}

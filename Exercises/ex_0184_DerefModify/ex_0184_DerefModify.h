@@ -8,5 +8,5 @@
 // Local includes
 
 // Function prototypes
-
+void ex_0184_DerefModify(int *, int);
 #endif // EX_0184_DEREFMODIFY_H

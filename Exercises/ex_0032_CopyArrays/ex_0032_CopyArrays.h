@@ -8,5 +8,6 @@
 // Local includes
 
 // Function prototypes
+void ex_0032_CopyArrays(const int *, int *, int);
 
 #endif // EX_0032_COPYARRAYS_H
